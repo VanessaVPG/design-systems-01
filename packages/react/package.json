@@ -1,0 +1,32 @@
+{
+  "name": "@vanessa-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vanessa-ui/eslint-config": "*",
+    "@vanessa-ui/tokens": "*",
+    "@vanessa-ui/ts-config": "*",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0"
+  }
+}

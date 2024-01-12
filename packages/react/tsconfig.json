@@ -1,0 +1,4 @@
+{
+  "extends": "@vanessa-ui/ts-config/react.json",
+  "include": ["src"],
+}
