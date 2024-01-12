@@ -1,6 +1,8 @@
 import './index.css'
 import clsx from 'clsx'
 export * from './components/Box'
+export * from './components/Text'
+export * from './components/Heading'
 
 export type ButtonProps = {
   size?: 'small' | 'medium' | 'large'
