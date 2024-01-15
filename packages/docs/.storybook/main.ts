@@ -12,11 +12,11 @@ function getAbsolutePath(value: string): any {
 const config: StorybookConfig = {
   stories: ["../src/pages/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-onboarding"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-interactions"),
-
+    "@storybook/addon-essentials",
+    "@storybook/addon-links",
+    "@storybook/addon-actions",
+    "@storybook/addon-interactions",
+    "@storybook/addon-onboarding",
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -29,7 +29,7 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen',
     skipBabel: true,
     check: false,
-  }, 
+  },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
       config.base = '/design-system'
