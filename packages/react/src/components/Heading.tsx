@@ -13,7 +13,7 @@ export function Heading({ variants, tag, children }: HeadingProps) {
   return React.createElement(
     Tag,
     {
-      className: clsx('font-default leading-md m-0 text-gray-100', {
+      className: clsx('font-default leading-md m-0 text-gray100', {
         'text-xl': variants === 'sm',
         'text-2xl': variants === 'md',
         'text-3xl': variants === 'lg',

@@ -18,17 +18,17 @@ export type TextProps = {
     | '8xl'
     | '9xl'
 
-  tag?: 'default' | 'strong' | 'span'
+  tag?: 'p' | 'strong' | 'span'
   children?: React.ReactNode
 }
 
 export function Text({ variants, tag, children }: TextProps) {
-  const Tag = tag || 'default'
+  const Tag = tag || 'p'
 
   return React.createElement(
     Tag,
     {
-      className: clsx('font-default leading-md m-0 text-gray-100', {
+      className: clsx('font-default leading-md m-0 text-gray100', {
         'text-xxs': variants === 'xxs',
         'text-xs': variants === 'xs',
         'text-sm': variants === 'sm',

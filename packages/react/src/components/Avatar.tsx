@@ -16,7 +16,7 @@ export function Avatar({ src, alt }: AvatarProps) {
       />
       <RadixAvatar.Fallback
         delayMs={600}
-        className="w-full h-full flex items-center justify-center bg-gray-600 text-gray-800"
+        className="w-full h-full flex items-center justify-center bg-gray600 text-gray800"
       >
         <User size={24} />
       </RadixAvatar.Fallback>

@@ -5,12 +5,12 @@ import { Text, TextProps } from '@vanessa-ui/react'
 export default {
   title: 'Typography/Text',
   component: Text,
+  tag: 'p',
 } as Meta<TextProps>
 
 export const Primary: StoryObj<TextProps> = {
   args: {
     children: 'Default',
-    tag: 'default',
   },
 }
 
