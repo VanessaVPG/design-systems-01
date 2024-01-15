@@ -23,7 +23,7 @@ export function Checkbox() {
     >
       <RadixCheckbox.Indicator
         asChild
-        className="text-white w-4 h-4 transition-all animate-checkmark"
+        className="text-white w-4 h-4 transition-all"
       >
         <Check weight="bold" />
       </RadixCheckbox.Indicator>
