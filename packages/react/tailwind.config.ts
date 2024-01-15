@@ -22,5 +22,16 @@ export default {
       lineHeight: lineHeights,
     },
   },
-  plugins: [],
+  plugins: [
+    // Extensão de regras personalizadas
+    function ({ addVariant, e }) {
+      addVariant('not-disabled-hover', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.${e(
+            `not-disabled-hover${separator}${className}`,
+          )}:not(:disabled):hover`
+        })
+      })
+    },
+  ],
 } satisfies Config
