@@ -23,7 +23,19 @@ const config: StorybookConfig = {
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
+  typescript: {
+    reactDocgen: 'react-docgen',
+    skipBabel: true,
+    check: false,
+  }, 
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/design-system'
+    }
+
+    return config
+  }
 };
 export default config;
