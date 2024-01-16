@@ -12,6 +12,7 @@ export const colors = {
   gray900: '#121214',
 
   allports300: '#5BB0D5',
+  allports400: '#3E8EC6',
   allports500: '#247299',
   allports700: '#1E536E',
   allports900: '#142D3D',
