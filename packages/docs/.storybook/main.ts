@@ -17,6 +17,7 @@ const config: StorybookConfig = {
     "@storybook/addon-actions",
     "@storybook/addon-interactions",
     "@storybook/addon-onboarding",
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),

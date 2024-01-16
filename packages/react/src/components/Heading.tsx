@@ -4,7 +4,7 @@ import React from 'react'
 export type HeadingProps = {
   variants?: 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl'
 
-  tag?: 'default' | 'h1' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7' | 'h8' | 'h9'
+  tag?: 'h2' | 'h1' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7' | 'h8' | 'h9'
   children?: React.ReactNode
 }
 

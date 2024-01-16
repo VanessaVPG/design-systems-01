@@ -4,6 +4,13 @@ import { Avatar, AvatarProps } from '@vanessa-ui/react'
 export default {
   title: 'Data display/Avatar',
   component: Avatar,
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {
