@@ -17,11 +17,13 @@ export function TextInput({
   prefix,
   disabled = false,
   placeholder,
+  ...props
 }: TextInputProps) {
   return (
     <div className="bg-gray900 py-3 px-4 rounded-sm box-border flex items-baseline border-2 border-gray900 focus-within:border-allports300 has-disabled:opacity-50 has-disabled:cursor-not-allowed">
       {!!prefix && <Prefix>{prefix}</Prefix>}{' '}
       <input
+        {...props}
         disabled={disabled}
         placeholder={placeholder}
         type="text"

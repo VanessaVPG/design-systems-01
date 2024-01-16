@@ -8,7 +8,7 @@ export type AvatarProps = {
 
 export function Avatar({ src, alt }: AvatarProps) {
   return (
-    <RadixAvatar.Root className="rounded-full w-12 h-12 overflow-hidden">
+    <RadixAvatar.Root className="rounded-full w-16 h-16 overflow-hidden">
       <RadixAvatar.Image
         src={src}
         alt={alt}

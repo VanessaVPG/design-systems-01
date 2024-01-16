@@ -5,12 +5,12 @@ import { Box, Text, TextInput, TextInputProps } from '@vanessa-ui/react'
 export default {
   title: 'Form/Text Input',
   component: TextInput,
+  args: {
+    placeholder: 'Type something...',
+  },
 } as Meta<TextInputProps>
 
 export const Primary: StoryObj<TextInputProps> = {
-  args: {
-    placeholder: 'Type your name',
-  },
   decorators: [
     (Story) => {
       return (
