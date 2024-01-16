@@ -15,9 +15,10 @@ export function Checkbox() {
       }}
       checked={isChecked}
       className={clsx(
-        'w-6 h-6 bg-gray900 rounded-xs leading-[0] cursor-pointer box-border flex items-center justify-center transition-all border-2 border-gray900 focus:border-ignite300',
+        'w-6 h-6 rounded-xs leading-[0] cursor-pointer box-border flex items-center justify-center transition-all  border-2 border-gray900 focus:border-allports300',
         {
-          'bg-ignite300': isChecked,
+          'bg-allports300': isChecked,
+          'bg-gray900': !isChecked,
         },
       )}
     >
