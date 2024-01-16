@@ -15,7 +15,7 @@ export const Primary: StoryObj<MultiStepProps> = {
   decorators: [
     (Story) => {
       return (
-        <Box tag={'label'} className="flex gap-2">
+        <Box tag={'label'} className="flex flex-col gap-2">
           {Story()}
         </Box>
       )

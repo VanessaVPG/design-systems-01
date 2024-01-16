@@ -29,12 +29,13 @@ export function MultiStep({ size = 4, currentStep = 1 }: MultiStepProps) {
           'grid-cols-12': size === 12,
         })}
       >
-        {Array.from({ length: size }, (_, index) => index + 1).map((step) => {
+        {Array.from({ length: size }, (_, i) => i + 1).map((step) => {
           return (
             <div
               key={step}
-              className={clsx('h-1 rounded-px bg-gray600', {
+              className={clsx('h-1 rounded-px', {
                 'bg-gray100': currentStep >= step,
+                'bg-gray-600': currentStep < step,
               })}
             ></div>
           )
