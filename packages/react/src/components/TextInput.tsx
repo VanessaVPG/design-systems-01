@@ -1,6 +1,6 @@
 export type TextInputProps = {
   prefix?: string
-  children: React.ReactNode
+  children?: React.ReactNode
   disabled?: boolean
   placeholder?: string
 }
