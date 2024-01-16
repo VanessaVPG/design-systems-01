@@ -19,7 +19,6 @@ jobs:
       - run: npm run build
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_VERCEL_TOKEN }}
-          TURBO_TEAM: rocketseat
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
